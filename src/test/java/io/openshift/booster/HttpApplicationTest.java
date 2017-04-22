@@ -40,7 +40,7 @@ public class HttpApplicationTest {
                 assertThat(resp.succeeded()).isTrue();
                 assertThat(resp.result().statusCode()).isEqualTo(200);
                 String content = resp.result().bodyAsJsonObject().getString("content");
-                assertThat(content).isEqualTo("Hello, World!");
+                assertThat(content).isEqualTo("Hello, Red Hat!");
                 async.complete();
             });
     }
